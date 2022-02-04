@@ -1,0 +1,17 @@
+if(isset($_POST['update']))
+{
+     //id to search
+     $reservationID = $_POST['reservationID'];
+     $destinationID = $_POST['destinationID'];
+
+    $updateReservation = "UPDATE reservation SET destinationID=$destinationID WHERE reservationID = $reservationID";
+    $result = mysqli_query($connection, $updateReservation);
+    if($result)
+    {
+        echo 'Data Updated';
+    }else{
+        echo 'Data Not Updated';
+    }
+    mysqli_close($connection);
+
+}

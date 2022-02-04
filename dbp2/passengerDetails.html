@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Passenger Details</title>
+    </head>
+    <body>
+        <h1 id="header">Passenger Details</h1>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <p id="description" >Welcome! Please fill in this form to book your tickets.</p>
+        <form action="saveDetails.php" method="POST">
+            <table align="center">
+                <tr>
+                    <td>First Name</td>
+                    <td>:</td>
+                    <td><input type="text" name="firstname" id="firstname" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>:</td>
+                    <td><input type="text" name="lastname" id="lastname" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="text" name="email" id="email" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Phone number</td>
+                    <td>:</td>
+                    <td><input type="text" name="phone_num" id="phone_num" size="50"></td>
+                </tr>
+            </table>
+            <button name="next" id="next" type="submit">Next</button>
+        </form>
+    </body>
+</html>

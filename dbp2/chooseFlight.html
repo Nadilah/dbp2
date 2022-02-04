@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+       
+        <title>Choose Destination</title>
+    </head>
+    <body>
+        <h1 id="header">Choose Destination</h1>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <p id="description">Please choose your flight destination</p>
+        <form action="saveFlightDetails.php" method="POST">
+            <table align="center">
+                <tr>
+                    <td>Destination ID</td>
+                    <td>:</td>
+                    <td><input type="text" name="destID" id="destID" size="50"></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>:</td>
+                    <td><input type="text" name="city" id="city" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>:</td>
+                    <td><input type="text" name="country" id="country" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Compartment Class</td>
+                    <td>:</td>
+                    <td><input type="text" name="compClass" id="compClass" size="50"></td>
+                </tr>
+                <tr>
+                    <td>Seat Number</td>
+                    <td>:</td>
+                    <td><input type="text" name="seatNum" id="seatNum" size="50"></td>
+                </tr>
+            </table>
+            <button name="next" id="next" type="submit">Next</button>
+        </form>
+    </body>
+</html>
